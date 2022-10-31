@@ -1,0 +1,76 @@
+/*-----------------global  -------------------*/
+.theme-shadow {
+    box-shadow: $box-shadow;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.imglogo {
+    width: 4rem;
+    height: 4rem;
+}
+
+
+
+.iconbox {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: $brand ;
+    color: white;
+    font-size: 1.8rem;
+    flex: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: $transition;
+
+    &:hover {
+        color: $golden;
+    }
+}
+
+
+
+/*--------------- BOTÓN ---------------------------*/
+
+.btn {
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 10px 24px;
+}
+
+.btn-brand {
+    background-color: $brand;
+    border-color: $dark;
+    color: white;
+
+    &:hover {
+        background-color: $dark;
+        border-color: $golden;
+        color: $golden;
+    }
+}
+
+
+/*--------------- BOTÓN FIN---------------------------*/
+
+
+
+
+
+/*-----------------global  FIN -------------------*/

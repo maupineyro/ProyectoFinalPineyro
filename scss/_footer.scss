@@ -1,0 +1,18 @@
+/*--------------- Footer -----------------*/
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+    background-color: $brand;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 6px;
+
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+/*--------------- Footer FIN -----------------*/

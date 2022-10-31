@@ -1,0 +1,174 @@
+/*------------ Títulos de las secciones -----------------------*/
+
+.section-title {
+    margin-bottom: 2rem;
+
+    .line {
+        width: 4rem;
+        height: 0.25rem;
+        background-color: $golden;
+        margin: 16px auto 24px auto;
+    }
+
+    p {
+        max-width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+
+
+
+
+/*------------ Títulos de las secciones FIN -----------------------*/
+
+
+
+/*-------------- NAVBAR ------------------- */
+
+.navbar {
+    box-shadow: $box-shadowceleste;
+
+    .navbar-nav {
+        .nav-link {
+            margin: 1rem;
+            font-weight: 500;
+            color: $brand;
+            transition: all 0.9s;
+
+            &:hover {
+                background-color: $bswarning;
+                color: $dark;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+/*-------------- NAVBAR FIN ------------------- */
+
+
+
+
+
+
+
+
+
+/*-------------- SECCIÓN HERO ------------------- */
+#hero {
+    background: linear-gradient(rgb(3, 9, 22), rgba(15, 39, 90, 0.863)), url(../assets/images/hero2.jpg);
+    background-position: 25% 25%;
+    background-size: cover;
+    box-shadow: $box-shadow;
+}
+
+/*-------------- SECCIÓN HERO FIN ------------------- */
+
+/*---------- SECCIÓN FAQ -------*/
+#faq {
+    box-shadow: $box-shadowceleste;
+}
+
+/*---------- SECCIÓN FAQ -------*/
+
+
+/*-------------- SECCIÓN pseudobanner ------------------- */
+#pseudobanner {
+    background: linear-gradient(rgb(3, 9, 22), rgba(15, 39, 90, 0.863)), url(../assets/images/hero2.jpg);
+    background-position: 25% 25%;
+    background-size: cover;
+}
+
+/*-------------- SECCIÓN psuedobanner FIN ------------------- */
+
+
+/* ------------ PORTFOLIO IMG Z----------------- */
+.portfolio-item .iconbox {
+    background-color: $brand;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.portfolio-item:hover .iconbox {
+    opacity: 1;
+    top: 50%;
+}
+
+
+.image-zoom {
+    position: relative;
+
+    &:hover {
+        .image-zoom-wrapper {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.image-zoom-wrapper {
+    overflow: hidden;
+    position: relative;
+
+    img {
+        transition: $transition;
+    }
+}
+
+/*
+.image-zoom:hover .image-zoom-wrapper img {
+    transform: scale(1.1);
+}
+*/
+/* ------------ PORTFOLIO IMG Z FIN ----------------- */
+
+
+
+
+
+
+
+/* -----------------CONTACTO--------------------------------------------- */
+#contacto {
+    position: relative;
+    z-index: 2;
+
+    &:after {
+        content: "";
+        width: 100%;
+        height: 70%;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .form-control {
+        border-radius: 0;
+
+        &:focus {
+            box-shadow: none;
+            border-color: $brand;
+        }
+    }
+
+}
+
+
+
+/* -----------------CONTACTO FIN----------------------------------- */
